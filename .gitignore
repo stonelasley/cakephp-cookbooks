@@ -1,3 +1,10 @@
+*~
+*#
+.#*
+\#*#
+.*.sw[a-z]
+*.un~
+pkg/
 *.gem
 *.rbc
 /.config
@@ -7,7 +14,29 @@
 /spec/reports/
 /test/tmp/
 /test/version_tmp/
-/tmp/
+/tmp/0
+
+# for a library or gem, you might want to ignore these files since the code is
+# intended to run in multiple environments; otherwise, check them in:
+# Gemfile.lock
+# .ruby-version
+# .ruby-gemset
+
+# Berkshelf
+.vagrant
+/cookbooks
+Berksfile.lock
+
+# Bundler
+Gemfile.lock
+bin/*
+.bundle/*
+/lib/bundler/man/
+
+.rvmrc
+.kitchen/
+.kitchen.local.yml
+
 
 ## Specific to RubyMotion:
 .dat*
@@ -20,15 +49,5 @@ build/
 /doc/
 /rdoc/
 
-## Environment normalisation:
-/.bundle/
-/lib/bundler/man/
 
-# for a library or gem, you might want to ignore these files since the code is
-# intended to run in multiple environments; otherwise, check them in:
-# Gemfile.lock
-# .ruby-version
-# .ruby-gemset
 
-# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
-.rvmrc
